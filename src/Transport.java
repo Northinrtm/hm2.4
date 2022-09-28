@@ -17,9 +17,9 @@ public class Transport {
 
     public void setSpeedMax(int speedMax) {
         if (speedMax <= 0) {
-            this.speedMax = speedMax;
-        } else {
             this.speedMax = -1;
+        } else {
+            this.speedMax = speedMax;
         }
     }
 
