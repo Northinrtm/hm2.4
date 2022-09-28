@@ -1,5 +1,9 @@
 public class Car extends Transport {
-    private float engineVolume;
+    private final float engineVolume;
+
+    public float getEngineVolume() {
+        return engineVolume;
+    }
 
     public Car(String brand, String model, int yearOut, String country, String color, int speedMax, float engineVolume) {
         super(brand, model, yearOut, country, color, speedMax);
