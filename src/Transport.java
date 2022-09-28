@@ -1,10 +1,11 @@
-public class Transport {
+public abstract class Transport {
     final private String brand;
     final private String model;
     final private int yearOut;
     final private String country;
     private String color;
     private int speedMax;
+    protected abstract void refill(Boolean benz, Boolean diz, Boolean electro);
 
     public void setColor(String color) {
 

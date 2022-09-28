@@ -1,9 +1,21 @@
 public class Train extends Transport {
+    private String statusRefill;
     private int fare;
     private int speedTrain;
     private String nameStationDeparture;
     private int numberWagons;
     private String nameStationFinal;
+
+    @Override
+    protected void refill(Boolean benz, Boolean diz, Boolean electro) {
+        {
+            if (diz) {
+                statusRefill = "заправлен";
+            } else {
+                statusRefill = "не заправлен";
+            }
+        }
+    }
 
     public int getFare() {
         return fare;
@@ -82,6 +94,6 @@ public class Train extends Transport {
                 ", nameStationDeparture='" + nameStationDeparture + '\'' +
                 ", numberWagons=" + numberWagons +
                 ", nameStationFinal='" + nameStationFinal + '\'' +
-                "} " + super.toString();
+                "} " + super.toString() + statusRefill;
     }
 }
