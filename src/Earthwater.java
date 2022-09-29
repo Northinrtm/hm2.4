@@ -7,10 +7,12 @@ public class Earthwater extends Animal {
 
     @Override
     void eat() {
+        System.out.println("землеводное ест");
     }
 
     @Override
     void go() {
+        System.out.println("землеводное идет");
     }
 
     void hunt() {

@@ -1,25 +1,27 @@
-public class FlyBird extends Bird{
-    private final String tipPeredvizheniya = "Летает и иногда ходит";
+public class FlyBird extends Bird {
+    private final String moveType = "Летает и иногда ходит";
 
-    public String getTipPeredvizheniya() {
-        return tipPeredvizheniya;
+    public String getMoveType() {
+        return moveType;
     }
 
     @Override
     void eat() {
+        System.out.println("клюет");
     }
 
     @Override
     void go() {
-        super.go();
+        System.out.println("птица летит");
     }
 
-    void fly(){}
+    void fly() {
+    }
 
     @Override
     public String toString() {
         return "FlyBird{" +
-                "tipPeredvizheniya='" + tipPeredvizheniya + '\'' +
+                "moveType='" + moveType + '\'' +
                 "} " + super.toString();
     }
 }

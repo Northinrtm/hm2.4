@@ -15,10 +15,12 @@ public class Bird extends Animal {
 
     @Override
     void eat() {
+        System.out.println("клюет");
     }
 
     @Override
     void go() {
+        System.out.println("идет");
     }
 
     void hunt() {

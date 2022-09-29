@@ -6,10 +6,12 @@ public class NotFlyBird  extends Bird{
 
     @Override
     void eat() {
+        System.out.println("клюет");
     }
 
     @Override
     void go() {
+        System.out.println("идет");
     }
 
     void walk(){}
