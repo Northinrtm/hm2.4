@@ -1,13 +1,5 @@
-public class Bird extends Animal {
-    private String sreda;
-
-    public void setSreda(String sreda) {
-        if (sreda == null) {
-            this.sreda = sreda;
-        } else {
-            this.sreda = "не указана среда";
-        }
-    }
+public class Earthwater extends Animal {
+    private final String sreda = "вода и земля";
 
     public String getSreda() {
         return sreda;
@@ -26,7 +18,7 @@ public class Bird extends Animal {
 
     @Override
     public String toString() {
-        return "Bird{" +
+        return "Eartweater{" +
                 "sreda='" + sreda + '\'' +
                 "} " + super.toString();
     }

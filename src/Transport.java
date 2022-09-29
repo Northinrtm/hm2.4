@@ -5,7 +5,7 @@ public abstract class Transport {
     final private String country;
     private String color;
     private int speedMax;
-    protected abstract void refill(Boolean benz, Boolean diz, Boolean electro);
+    protected abstract void refill(Boolean gasoline, Boolean diesel, Boolean electro);
 
     public void setColor(String color) {
 

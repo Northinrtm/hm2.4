@@ -7,9 +7,9 @@ public class Train extends Transport {
     private String nameStationFinal;
 
     @Override
-    protected void refill(Boolean benz, Boolean diz, Boolean electro) {
+    protected void refill(Boolean gasoline, Boolean diesel, Boolean electro) {
         {
-            if (diz) {
+            if (diesel) {
                 statusRefill = "заправлен";
             } else {
                 statusRefill = "не заправлен";

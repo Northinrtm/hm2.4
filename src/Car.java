@@ -7,8 +7,8 @@ public class Car extends Transport {
     }
 
     @Override
-    protected void refill(Boolean benz, Boolean diz, Boolean electro) {
-        if (benz || diz || electro) {
+    protected void refill(Boolean gasoline, Boolean diesel, Boolean electro) {
+        if (gasoline || diesel || electro) {
             statusRefill = "заправлен";
         } else {
             statusRefill = "не заправлен";

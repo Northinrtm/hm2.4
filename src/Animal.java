@@ -1,13 +1,55 @@
+import java.util.Objects;
+
 public class Animal {
-    String name;
-    int age;
-    void eat(){
+    private String name;
+    private int age;
+
+    public void setName(String name) {
+        if (name != null) {
+            this.name = name;
+        } else {
+            this.name = "не указано имя";
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    void eat() {
         System.out.println("кушать");
     }
-    void sleep(){
+
+    void sleep() {
         System.out.println("sleep");
     }
-    void move(){
-        System.out.println("move");
+
+    void go() {
+        System.out.println("идет");
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+    public boolean equals(Animal a) {
+        if (this.hashCode() == a.hashCode()) return true;
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getAge());
     }
 }
