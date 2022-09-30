@@ -11,7 +11,7 @@ public class Hunter extends Mammalia {
         System.out.println("бегут");
     }
 
-    void hunt() {
+    void hunt() {System.out.println("метод что то делает");
     }
 
     @Override

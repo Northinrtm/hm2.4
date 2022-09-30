@@ -15,7 +15,7 @@ public class Earthwater extends Animal {
         System.out.println("землеводное идет");
     }
 
-    void hunt() {
+    void hunt() {System.out.println("метод что то делает");
     }
 
     @Override

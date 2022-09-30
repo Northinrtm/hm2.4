@@ -15,6 +15,6 @@ public class GrassEater extends Mammalia {
         System.out.println("бегут");
     }
 
-    void pastis() {
+    void pastis() {System.out.println("метод что то делает");
     }
 }

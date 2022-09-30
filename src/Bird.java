@@ -24,6 +24,7 @@ public class Bird extends Animal {
     }
 
     void hunt() {
+        System.out.println("метод что то делает");
     }
 
     @Override

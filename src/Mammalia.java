@@ -36,7 +36,7 @@ public class Mammalia extends Animal {
         System.out.println("передвигаются");
     }
 
-    void walk() {
+    void walk() {System.out.println("метод что то делает");
     }
 
     @Override

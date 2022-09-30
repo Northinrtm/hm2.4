@@ -15,7 +15,7 @@ public class FlyBird extends Bird {
         System.out.println("птица летит");
     }
 
-    void fly() {
+    void fly() {System.out.println("метод что то делает");
     }
 
     @Override

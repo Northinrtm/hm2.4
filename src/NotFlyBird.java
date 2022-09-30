@@ -14,7 +14,7 @@ public class NotFlyBird  extends Bird{
         System.out.println("идет");
     }
 
-    void walk(){}
+    void walk(){System.out.println("метод что то делает");}
 
     @Override
     public String toString() {
